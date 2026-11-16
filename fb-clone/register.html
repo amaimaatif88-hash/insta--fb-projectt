@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sign up for Facebook</title>
+  <link rel="stylesheet" href="assets/main.css">
+</head>
+<body class="dark">
+  <header class="topbar"><span class="brand">facebook</span></header>
+  <section class="login-area">
+    <h2>Create a new account</h2>
+    <form id="regForm" novalidate>
+      <label>Full name</label><input id="fname" type="text">
+      <label>Date of birth</label><input id="dob" type="date">
+      <label>Gender</label>
+      <div class="gender">
+        <label><input type="radio" name="g" value="Female"> Female</label>
+        <label><input type="radio" name="g" value="Male"> Male</label>
+        <label><input type="radio" name="g" value="Custom"> Custom</label>
+      </div>
+      <label>Email or mobile</label><input id="contact" type="text">
+      <label>New password</label><input id="newpwd" type="password">
+      <div class="meter"><div id="bar"></div></div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="links"><a href="login.html">Already have an account?</a></div>
+  </section>
+  <div id="toast" class="toast"></div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

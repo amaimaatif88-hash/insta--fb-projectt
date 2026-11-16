@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Instagram</title><link rel="stylesheet" href="styles/base.css"></head>
+<body>
+  <div class="card">
+    <img src="assets/logo-icon.svg" class="icon" alt="icon">
+    <h1>Instagram</h1>
+    <form id="signin">
+      <div class="field"><input id="u" required placeholder=" "><label>Username or email</label></div>
+      <div class="field"><input id="p" type="password" required placeholder=" "><label>Password</label></div>
+      <button class="primary">Sign in</button>
+    </form>
+    <p class="msg" id="msg"></p>
+    <a class="link" href="pages/reset.html">Trouble logging in?</a>
+    <div class="divider">or</div>
+    <a class="outline" href="pages/register.html">Create new account</a>
+  </div>
+  <p class="foot">Made for Web Dev Lab · not affiliated with Meta</p>
+  <script src="scripts/auth.js"></script>
+</body>
+</html>

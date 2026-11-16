@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Join Instagram</title><link rel="stylesheet" href="../styles/base.css"></head>
+<body>
+  <div class="card">
+    <img src="../assets/logo-icon.svg" class="icon" alt="icon">
+    <h1>Join Instagram</h1>
+    <ul class="steps"><li class="active">1</li><li>2</li></ul>
+    <form id="register">
+      <div class="step" id="step1">
+        <div class="field"><input id="mail" type="email" required placeholder=" "><label>Email</label></div>
+        <div class="field"><input id="full" required placeholder=" "><label>Full name</label></div>
+        <button type="button" class="primary" id="next">Next</button>
+      </div>
+      <div class="step hidden" id="step2">
+        <div class="field"><input id="handle" required placeholder=" "><label>Choose a username</label></div>
+        <small id="handleInfo" class="hint"></small>
+        <div class="field"><input id="secret" type="password" required placeholder=" "><label>Password</label></div>
+        <button class="primary">Finish</button>
+      </div>
+    </form>
+    <p class="msg" id="msg"></p>
+    <a class="link" href="../index.html">Back to sign in</a>
+  </div>
+  <script src="../scripts/register.js"></script>
+</body>
+</html>
